@@ -1,0 +1,64 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { Button, Form, Row, Col, FormGroup, Label, Input } from 'reactstrap';
+import Access from './layouts/Access';
+import './CreateAccount.css';
+
+function CreateAccount(props) {
+
+    return (
+        <Access>
+            <div className="Access">
+                <div className="Access-header">
+                    <Row>
+                        <Col md="6">
+                            <h4>
+                                Create Account
+                            </h4>
+                        </Col>
+                        <Col md="6">
+                            <Link to="/log-in">Log In</Link>
+                        </Col>
+                    </Row>
+
+                </div>
+                <div className="Create-account-form">
+                    <Form>
+                        <FormGroup>
+                            <Label for="email">Email</Label>
+                            <Input type="email" name="email" id="email" placeholder="with a placeholder" />
+                        </FormGroup>
+                        <FormGroup>
+                            <Label for="password">Password</Label>
+                            <Input type="password" name="password" id="password" placeholder="password placeholder" />
+                        </FormGroup>
+                        <FormGroup>
+                            <Label for="confirm-password">Confirm Password</Label>
+                            <Input type="password" name="confirm-password" id="confirm-password" placeholder="password placeholder" />
+                        </FormGroup>
+
+                        <Button>Create Account</Button>
+                    </Form>
+                </div>
+                <div className="Access-header">
+                    <Row>
+                        <Col md="12">
+                            <h4>
+                                Or:
+                            </h4>
+                        </Col>
+                    </Row>
+
+                </div>
+                <div className="Social-form">
+                    <Button color="primary" block>Sign up with Facebook</Button>
+                    <Button color="secondary" block>Sign up with Google</Button>
+                    <Button color="success" block>Sign up with Twitter</Button>
+                </div>
+            </div>
+        </Access>
+    );
+
+}
+
+export default CreateAccount;

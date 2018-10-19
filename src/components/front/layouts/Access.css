@@ -1,0 +1,8 @@
+.App-container.container-fluid{
+    float:left;
+    padding-right:0px;
+}
+.Placeholder-img{
+    background:#D6D6D6;
+    height: 100vh;
+}
