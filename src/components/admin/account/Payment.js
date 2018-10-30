@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { Button, Form, Row, Col, FormGroup, Label, Input } from 'reactstrap';
+import { Button, Form, Row, Col, FormGroup, Label, Input, Badge } from 'reactstrap';
+import './Payment.css';
 
 
 
@@ -37,16 +38,27 @@ class Payment extends Component {
                             <Label for="cardNumber">Card Number</Label>
                             <Input type="text" name="cardNumber" id="cardNumber" placeholder="Insert Credit Card Number" />
                         </FormGroup>
-                        <FormGroup>
-                            <Label for="name">Name</Label>
-                            <Input type="text" name="name" id="name" placeholder="Enter Name" />
+                        <FormGroup row>
+                            <Col>
+                                <Label> Expiration date</Label>
+                                <Input type="text" id="experationdate" />
+                            </Col>
+                            <Col>
+                                <Label> CVC Number</Label>
+                                <Input type="text" id="cvcnumber" />
+                            </Col>
                         </FormGroup>
                         <FormGroup>
-                            <Label for="emailAddress">Email address</Label>
-                            <Input type="text" name="emailAddress" id="emailAddress" placeholder="email@address.com" />
+                            <h4>
+                                <Badge outline>
+                                    powerd by <span id="stripe_badge">stripe</span>
+                                </Badge>
+                            </h4>
+                            <br />
                         </FormGroup>
 
                         <Button>Save Payment Information</Button>
+
                     </Form>
                 </Col>
             </Row>

@@ -4,4 +4,17 @@
 }
 .Admin-left{
     height: 100vh;
+    padding: 20px;
+}
+
+.Admin-top-nav{
+    padding: 20px 0;
+}
+
+.Admin-profile{
+    padding: 20px 0;
+}
+
+.Account-widget{
+    padding-bottom: 20px;
 }

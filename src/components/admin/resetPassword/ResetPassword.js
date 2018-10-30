@@ -25,6 +25,7 @@ function ResetPassword(props) {
                         </FormGroup>
                         <FormGroup>
                             <a href>Cancel</a>
+                            <br></br>
                             <Button>Reset Password</Button>
                         </FormGroup>
 
@@ -33,7 +34,7 @@ function ResetPassword(props) {
                     </Form>
                 </Col>
             </Row>
-        </Admin>
+        </Admin >
 
     );
 

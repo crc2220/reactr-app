@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { Button, Form, Row, Col, FormGroup, Label, Input } from 'reactstrap';
 
+
 class Profile extends Component {
     state = {
         values: {
@@ -53,10 +54,6 @@ class Profile extends Component {
             <Row className="Account-widget Account-profile">
                 <Col sm="12" md="3">
                     <h4>Profile</h4>
-                    <p>
-                        {JSON.stringify(this.state.values, null, 2)}
-
-                    </p>
                 </Col>
                 <Col sm="12" md="9">
                     <Form>
@@ -91,6 +88,24 @@ class Profile extends Component {
                             <Link to="/admin/reset-password">Reset Password</Link>
                         </FormGroup>
 
+                        <Label>
+                            <h5>Notifications</h5>
+                        </Label>
+                        <br />
+
+                        <Label> App Notifications</Label>
+                        <Button size="small" className="float-right" color="primary">
+                            On
+                        </Button>
+                        <br />
+                        <br />
+                        <Label> Email Notifications</Label>
+                        <Button size="small" className="float-right" color="secondary">
+                            Off
+                        </Button>
+
+                        <br />
+                        <br />
 
                         <Button>Save Profile</Button>
                     </Form>

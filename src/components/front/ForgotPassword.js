@@ -18,7 +18,7 @@ function ForgotPassword(props) {
                             </h4>
                         </Col>
                         <Col md="6">
-                            <Link to="/log-in">Log In</Link>
+                            <Link className="float-right" to="/log-in">Log In</Link>
                         </Col>
                     </Row>
 

@@ -17,7 +17,7 @@ function CreateAccount(props) {
                             </h4>
                         </Col>
                         <Col md="6">
-                            <Link to="/log-in">Log In</Link>
+                            <Link className="float-right" to="/log-in">Log In</Link>
                         </Col>
                     </Row>
 
@@ -40,6 +40,7 @@ function CreateAccount(props) {
                         <Button>Create Account</Button>
                     </Form>
                 </div>
+                <br></br>
                 <div className="Access-header">
                     <Row>
                         <Col md="12">
@@ -50,10 +51,11 @@ function CreateAccount(props) {
                     </Row>
 
                 </div>
+                <br></br>
                 <div className="Social-form">
-                    <Button color="primary" block>Sign up with Facebook</Button>
-                    <Button color="secondary" block>Sign up with Google</Button>
-                    <Button color="success" block>Sign up with Twitter</Button>
+                    <Button id="facebook" color="primary" block>Sign Up with Facebook</Button>
+                    <Button id="google" color="secondary" block>Sign Up with Google</Button>
+                    <Button id="twitter" color="success" block>Sign Up with Twitter</Button>
                 </div>
             </div>
         </Access>

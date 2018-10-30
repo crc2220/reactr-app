@@ -7,7 +7,7 @@ function Admin(props) {
 
     return (
         <Container fluid={true} className="App-container">
-            <Row noGutters={true}>
+            <Row>
                 <Col sm="12" md="4" className="Admin-left">
                     <h2>Future App Nav</h2>
 

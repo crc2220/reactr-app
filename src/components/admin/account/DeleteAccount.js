@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Button, Form, Row, Col, FormGroup, Label, Input } from 'reactstrap';
-
+import './DeleteAccount.css';
 class DeleteAccount extends Component {
     state = {
         values: {

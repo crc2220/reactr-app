@@ -18,7 +18,7 @@ function LogIn(props) {
                             </h4>
                         </Col>
                         <Col md="6">
-                            <Link to="/create-account">Create Account</Link>
+                            <Link className="float-right" to="/create-account">Create Account</Link>
                         </Col>
                     </Row>
 
@@ -43,17 +43,18 @@ function LogIn(props) {
                                 </FormGroup>
                             </Col>
                             <Col md="6">
-                                <Link to="/forgot-password">Forgot Password</Link>
+                                <Link className="float-right" to="/forgot-password">Forgot Password</Link>
                             </Col>
                         </Row>
-
+                        <br></br>
                         <Button>Log In</Button>
                     </Form>
                 </div>
+                <br></br>
                 <div className="Social-form">
-                    <Button color="primary" block>Log In with Facebook</Button>
-                    <Button color="secondary" block>Log In with Google</Button>
-                    <Button color="success" block>Log In with Twitter</Button>
+                    <Button id="facebook" color="primary" block>Log In with Facebook</Button>
+                    <Button id="google" color="secondary" block>Log In with Google</Button>
+                    <Button id="twitter" color="success" block>Log In with Twitter</Button>
                 </div>
             </div>
         </Access>
