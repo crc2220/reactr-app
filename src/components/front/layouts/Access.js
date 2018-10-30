@@ -12,7 +12,7 @@ function Access(props) {
                     {props.children}
                 </Col>
                 <Col sm="12" md="6" className="Placeholder-img">
-                    <img />
+                    <img alt="App Graphic" />
                 </Col>
             </Row>
         </Container>
