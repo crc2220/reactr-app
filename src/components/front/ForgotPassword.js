@@ -27,7 +27,7 @@ function ForgotPassword(props) {
                     <Form>
                         <FormGroup>
                             <Label for="exampleEmail">Enter Email address</Label>
-                            <Input type="email" name="email" id="exampleEmail" placeholder="with a placeholder" />
+                            <Input type="email" name="email" id="exampleEmail" placeholder="e@mail.com" />
                             <FormText color="muted">
                                 We'll send you a link to reset your password
                             </FormText>

@@ -26,15 +26,15 @@ function CreateAccount(props) {
                     <Form>
                         <FormGroup>
                             <Label for="email">Email</Label>
-                            <Input type="email" name="email" id="email" placeholder="with a placeholder" />
+                            <Input type="email" name="email" id="email" placeholder="e@mail.com" />
                         </FormGroup>
                         <FormGroup>
                             <Label for="password">Password</Label>
-                            <Input type="password" name="password" id="password" placeholder="password placeholder" />
+                            <Input type="password" name="password" id="password" placeholder="password" />
                         </FormGroup>
                         <FormGroup>
                             <Label for="confirm-password">Confirm Password</Label>
-                            <Input type="password" name="confirm-password" id="confirm-password" placeholder="password placeholder" />
+                            <Input type="password" name="confirm-password" id="confirm-password" placeholder="password" />
                         </FormGroup>
 
                         <Button>Create Account</Button>

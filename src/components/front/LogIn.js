@@ -27,11 +27,11 @@ function LogIn(props) {
                     <Form>
                         <FormGroup>
                             <Label for="exampleEmail">Email</Label>
-                            <Input type="email" name="email" id="exampleEmail" placeholder="with a placeholder" />
+                            <Input type="email" name="email" id="exampleEmail" placeholder="e@mail.com" />
                         </FormGroup>
                         <FormGroup>
                             <Label for="examplePassword">Password</Label>
-                            <Input type="password" name="password" id="examplePassword" placeholder="password placeholder" />
+                            <Input type="password" name="password" id="examplePassword" placeholder="password" />
                         </FormGroup>
                         <Row>
                             <Col md="6">
