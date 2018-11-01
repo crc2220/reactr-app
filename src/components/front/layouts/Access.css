@@ -1,4 +1,10 @@
 .Placeholder-img{
     background:#D6D6D6;
     height: 100vh;
+    overflow: hidden;
+}
+@media (max-width: 767px){
+    .Placeholder-img{
+        display: none;
+    }
 }

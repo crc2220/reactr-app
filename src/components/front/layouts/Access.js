@@ -15,7 +15,7 @@ function Access(props) {
                 </Col>
 
                 <Col sm="12" md="6" className="Placeholder-img">
-                    <img alt="App Graphic" />
+                    <img src="https://covailnt.com/wp-content/uploads/2017/04/FreelanceHeroFlat.png" alt="App Graphic" />
                 </Col>
             </Row>
         </Container>
