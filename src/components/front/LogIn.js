@@ -7,9 +7,6 @@ import isValidEmail from '../../utils/validity';
 
 class LogIn extends Component {
 
-    constructor() {
-        super();
-    }
 
     state = {
         emailValid: false,
@@ -18,6 +15,10 @@ class LogIn extends Component {
         rememberMe: false,
         logInBtn: false,
         passwordValue: null
+    }
+
+    formFilled = () => {
+        return (this.state.emailValid && this.state.passwordValue !== "")
     }
 
     handleUserInput = (e) => {
@@ -86,7 +87,7 @@ class LogIn extends Component {
                                 </Col>
                             </Row>
                             <br></br>
-                            <Button color="primary">Log In</Button>
+                            <Button disabled={!this.formFilled()} color="primary">Log In</Button>
                         </Form>
                     </div>
                     <br></br>
