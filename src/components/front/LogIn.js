@@ -14,16 +14,25 @@ class LogIn extends Component {
         formValid: false,
         rememberMe: false,
         logInBtn: false,
-        passwordValue: null
+        password: ""
     }
 
     formFilled = () => {
-        return (this.state.emailValid && this.state.passwordValue !== "")
+        console.log(this.state.emailValid);
+        console.log(this.state.passwordValue);
+        return (this.state.emailValid && this.state.password !== "")
     }
 
     handleUserInput = (e) => {
         const { name, value } = e.target;
-        this.validateField(name, value);
+        if(name === "password"){
+            this.setState({
+                password: value
+            })
+        }else{
+            this.validateField(name, value);
+        }
+        
     }
     validateField = (name, value) => {
         switch (name) {
@@ -71,7 +80,7 @@ class LogIn extends Component {
                             </FormGroup>
                             <FormGroup>
                                 <Label for="examplePassword">Password</Label>
-                                <Input type="password" name="password" id="examplePassword" placeholder="password" />
+                                <Input onChange={this.handleUserInput} value={this.state.password} type="password" name="password" id="examplePassword" placeholder="password" />
                             </FormGroup>
                             <Row>
                                 <Col md="6">
